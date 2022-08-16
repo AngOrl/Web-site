@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>ЭМС</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+</head>
+
+<body class="auto-page mt-3">
+    <div class="container" id='topline'>
+        <div class="row mt-2 pt-4">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+                <a href="/">
+                    <h6 style="color: white; font-weight: 700;"> ЭЛЕКТРОМОНТАЖСТРОЙ</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-md-offset-8">
+                <a href="/login.html" style="color: rgb(255, 255, 255);"> Вход  | </a>
+                <a href="/signup.html" style="color: white;"> Регистрация</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
+                          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                          <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
+                      </svg>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sidenav">
+        <a href="/index.html">Главная</a>
+        <a href="/auto.html">Автомобили</a>
+        <a href="/lising.html">Лизинг</a>
+        <a href="/travel.html">Путевые листы</a>
+        <a href="/notes.html">Служебные записки</a>
+    </div>
+
+    <div class="container pt-lg-2" id="container-auto">
+        <div class="col-12 p-3 mb-3">
+            <h1 class="text-center"> <b>Лизинг</b> </h1>
+        </div>
+        <div class="row pb-3 justify-content-md-center">
+            <a href="/addlising.html" class="btn btn-primary mt-0">Добавить машину в лизинг</a>
+            <form action="{% url 'auto' %}" method="get" class='form-inline' style="padding-left: 50%;">
+                <input class='form-control mr-sm-2' name="search" type="search" placeholder="Найти..." aria-label='Search'>
+                <button class="btn btn-primary" type='submit'> Найти </button>
+            </form>
+
+        </div>
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+        <section class="hero-section">
+            <div class="card-grid">
+
+                <a class="card_car" href="/detaillising.html">
+                    <div class="card__background" style="background-image: url(https://i.mycdn.me/videoPreview?id=12334138624&type=47&idx=30&tkn=g4i3L8p46cSjgLmpfhU9ZtkGzpo&i=1&fn=external_8)"></div>
+                    <div class="card__content">
+                        <p class="card__category">Камаз</p>
+                        <p class="card__category">Колесная</p>
+                        <h3 class="card__heading"> Е 502 ЕР </h3>
+                    </div>
+                </a>
+                <a class="card_car" href="/detaillising.html">
+                    <div class="card__background" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtfMSZ0uDoXiS-3vHhhI1lmZfN1wCwOwjzmt4ggt_ib2QercteZuA_SG22A-p5GNuYRxQ&usqp=CAU)"></div>
+                    <div class="card__content">
+                        <p class="card__category">Камаз</p>
+                        <p class="card__category">DКолесная </p>
+                        <h3 class="card__heading">Е 502 ЕР</h3>
+                    </div>
+                </a>
+
+                <a class="card_car" href="/detaillising.html">
+                    <div class="card__background" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa-aYQi-htgkhEU8plnjyr42GfrgAzOq1AiMY1uByGdxyWctDZXhS9nE4V6_-fC-N2-8c&usqp=CAU)"></div>
+                    <div class="card__content">
+                        <p class="card__category">Камаз</p>
+                        <p class="card__category">Колесная</p>
+                        <h3 class="card__heading">Е 502 ЕР</h3>
+                    </div>
+                    </li>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+
+    <div class="navbar-fixed-bottom row-fluid">
+        <div class="navbar-inner">
+            <hr class="container-fluid " />
+            <div class="container">
+                <footer class="footer_card footer-inverse">
+                    <p>&copy; ООО "ЭМС", 2022</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
