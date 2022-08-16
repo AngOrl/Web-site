@@ -35,18 +35,17 @@
                 <div id="login-form" class="mt-4">
                     <h1>Авторизация</h1>
                     <fieldset class="fieldset mt-5">
-                        <form class="decor">
-                            <div class="form-left-decoration"></div>
-                            <div class="form-right-decoration"></div>
-                            <div class="circle"></div>
-                            <div class="form-inner">
-                                <h3>Написать нам</h3>
-                                <input type="text" placeholder="Username">
-                                <input type="email" placeholder="Email">
+                        <form>
+                            <input id="loginField" type="text" required value="Логин" name="username" required onBlur="if(this.value=='')this.value='Логин'" onFocus="if(this.value=='Логин')this.value='' ">
+                            <input id="passwordField" type="password" name="password" required value="Пароль" onBlur="if(this.value=='')this.value='Пароль'" onFocus="if(this.value=='Пароль')this.value='' ">
+                            <a href="/acount.html" class="btn btn-primary mt-3">Войти</a>
 
-                                <a href="/acount.html" class="btn btn-primary mt-3">Войти</a>
+                            <div class="container_signin mt-3">
+                                <a class="a_sign" href="/signup.html">Зарегистрироваться</a>
                             </div>
+                            </footer>
                         </form>
+                    </fieldset>
 
 
                         <div class="container_signin mt-3">
